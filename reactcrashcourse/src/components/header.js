@@ -1,24 +1,17 @@
 // imports
-import React from 'react';
+import React, { Component } from 'react';
+import CSS from "../css/style.css";
 
-// 
-const info = {
-    name: 'anup',
-    course: 'react'
-}
-const enrolled_date = () => {    
-    return Date.now();
-}
-
-//    functional component
-const Header = () => {
-    return (
-        <div>
-            <h1> 
-                { info.name } enrolled in { info.course } course on { enrolled_date() }
-            </h1>
-        </div>
-    )
+// class component
+class Header extends Component {
+    render() {
+        return (
+            <header>
+                <div className="logo"> Logo </div>
+                <input type="text" />
+            </header>
+        )
+    }
 }
 
 // export component
