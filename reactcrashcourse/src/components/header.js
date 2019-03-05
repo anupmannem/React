@@ -1,10 +1,23 @@
 // imports
 import React from 'react';
 
+// 
+const info = {
+    name: 'anup',
+    course: 'react'
+}
+const enrolled_date = () => {    
+    return Date.now();
+}
+
 //    functional component
 const Header = () => {
     return (
-        <h1>I am header component</h1>
+        <div>
+            <h1> 
+                { info.name } enrolled in { info.course } course on { enrolled_date() }
+            </h1>
+        </div>
     )
 }
 
