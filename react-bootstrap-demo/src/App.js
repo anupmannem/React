@@ -18,33 +18,40 @@ class Header extends React.Component {
   render() {
     return (
 			<Nav>
-				<NavItem>      
-          <Button variant="outline-primary"
+				<NavItem>
+					<NavLink tag={Link} to="/">Home</NavLink>
+					{/* Link - routes to endpoint without reload */}
+					{/* <NavLink href="/">Home</NavLink> */}
+					{/* href="" routes to endpoint with reload */}
+          {/* <Button variant="outline-primary"
 						tag={Link} to="/"
-					>						
+					>
 						Home
-					</Button>
+					</Button> */}
 				</NavItem>
-        <NavItem>        
-					<Button variant="outline-primary"
+        <NavItem>
+					<NavLink tag={Link} to="/profile">Profile</NavLink>
+					{/* <Button variant="outline-primary"
 						tag={Link} to="/profile"
 					>          	
 						Profile
-					</Button>
+					</Button> */}
         </NavItem>
 				<NavItem>
-					<Button variant="outline-primary"
+					<NavLink tag={Link} to="/posts">Posts</NavLink>
+					{/* <Button variant="outline-primary"
 						tag={Link} to="/posts"
 					>						
 						Posts
-					</Button>
+					</Button> */}
         </NavItem>
 				<NavItem>
-					<Button variant="outline-primary"
+					<NavLink tag={Link} to="/contact">Contact</NavLink>
+					{/* <Button variant="outline-primary"
 						tag={Link} to="/contact"
 					>						
 						Contact
-					</Button>
+					</Button> */}
         </NavItem>
 			</Nav>
     );
